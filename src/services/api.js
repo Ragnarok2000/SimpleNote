@@ -1,10 +1,10 @@
 import axios from 'axios';
 
 // Access Vite environment variable
-const URL = import.meta.env.VITE_REACT_APP_API_URL;
+// const URL = import.meta.env.VITE_REACT_APP_API_UR;
 
 
-const BASE_URL = `${URL}/api/notes`;
+const BASE_URL = `https://demo-deployment-dqtj.onrender.com/api/notes`;
 
 export const getAllNotes = () => axios.get(`${BASE_URL}/getAllNotes`);
 export const getNoteById = (id) => axios.get(`${BASE_URL}/getNote/${id}`);
